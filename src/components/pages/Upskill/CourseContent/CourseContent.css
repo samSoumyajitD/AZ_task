@@ -1,0 +1,232 @@
+.course-content {
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    margin: 0 20px;
+}
+
+.course-content-head {
+    padding: 20px 30px 40px 30px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 13px;
+    gap: 8px;
+    background-color: #fff;
+    position: relative; 
+}
+
+
+.course-content-subhead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.course-content-subhead-left {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.course-content-subhead-right {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    font-size: 18px;
+    color: #17384D;
+}
+
+.expand-toggle {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+
+.course-part {
+    color: #17384D;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.course-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+    line-height: 28px;
+}
+
+
+.content-attribute {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 16px;
+    color: #17384D;
+}
+
+
+.course-progress-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background-color: #e0e0e0;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    overflow: hidden;
+}
+
+.course-progress-fill {
+    height: 100%;
+    background-color: #17384D;
+    transition: width 0.3s ease;
+}
+
+
+.progress-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 8px;
+}
+
+.progress-percentage {
+    margin-left: auto;
+    padding: 4px 10px;
+    width: 160px;
+    gap: 10px;
+    border-radius: 8px;
+    background: #EFF5FF;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26.04px;
+    text-align: center;
+    border: 1px solid #99E4FF;
+}
+
+/* Expandable content styling */
+.expandable-content {
+   
+    font-size: 14px;
+    color: #333;
+}
+
+
+.checkbox-list {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.checkbox-list li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.checkbox-list li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+/* Icon styling */
+.list-icon {
+    font-size: 20px;
+}
+.item-text {
+    font-size: 24px; 
+    font-weight: 700; 
+    display: flex; 
+    align-items: center; 
+    margin: 10px 0; 
+    text-align: justify;
+}
+
+.checkbox-list {
+    list-style-type: none; 
+    padding: 0; 
+}
+.row1{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.row12, .row13{
+    gap:5px;
+    
+    display: flex;
+    justify-content: center;
+    text-align: center;
+   align-items: center;
+}
+.row13{
+    font-weight: 400;
+    text-align: justify;
+    padding: 0 20px;
+}
+
+
+
+@media (max-width: 768px) {
+    .course-content {
+        margin: 0;
+    }
+    .course-content-head {
+        padding: 10px ;
+    }
+    .course-content-subhead {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .course-content-subhead-right {
+        justify-content: flex-start;
+        gap: 1rem;
+        font-size: 16px;
+    }
+    .course-part {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .course-title {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .content-attribute {
+        font-size: 14px;
+    }
+    .progress-percentage {
+        padding: 4px 8px;
+        width: auto;
+        font-size: 16px;
+    }
+    .list-icon {
+        font-size: 18px;
+    }
+}
+
+
+
+@media (max-width: 480px) {
+    .list-icon {
+        font-size: 16px;
+    }
+    .course-title {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .content-attribute {
+        font-size: 12px;
+    }
+    .progress-percentage {
+        padding: 2px 6px;
+        font-size: 14px;
+    }
+}
