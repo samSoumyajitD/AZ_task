@@ -7,7 +7,7 @@ import SignalCellularAltOutlinedIcon from '@mui/icons-material/SignalCellularAlt
 import PlayCircleOutlineOutlinedIcon from '@mui/icons-material/PlayCircleOutlineOutlined';
 import FolderCopyOutlinedIcon from '@mui/icons-material/FolderCopyOutlined';
 import HelpOutlineOutlinedIcon from '@mui/icons-material/HelpOutlineOutlined';
-
+import CodeOutlinedIcon from '@mui/icons-material/CodeOutlined';
 const CourseSection = ({ part, title, duration, difficulty, videos, articles, quizzes, codingExercises, resources }) => {
     const [isExpanded, setIsExpanded] = useState(false);
     
@@ -133,7 +133,7 @@ const CourseSection = ({ part, title, duration, difficulty, videos, articles, qu
                                     checked={checkedItems.codingExercises[index]}
                                     onChange={() => handleCheckboxChange('codingExercises', index)}
                                 />
-                                <PlayCircleOutlineOutlinedIcon style={{ marginRight: '8px' }} />
+                                <CodeOutlinedIcon style={{ marginRight: '8px' }} />
                                 <div>{exercise}</div></div>
                                 <div className='row13'><AccessTimeOutlinedIcon/> 10:00</div>
                                 </div>
